@@ -1,0 +1,30 @@
+{
+  "name": "d3",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "d3": "^4.13.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "devDependencies": {
+    "@strv/eslint-config-javascript": "^7.10.0",
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-webpack": "^0.8.4",
+    "prettier": "^1.11.1",
+    "prop-types": "^15.6.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "npm run lint:js",
+    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts",
+    "lint:js": "npm run lint:eslint -- . ",
+    "lint:fix": "npm run lint:js -- --fix",
+    "prettier": "prettier --write '**/*.js'"
+  }
+}
